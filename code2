@@ -1,0 +1,17 @@
+ public class pattern{
+    public static void main(String[] args) {
+        int n = 7;
+        int size = 2 * n + 1;
+
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                if (Math.abs(n - i) + Math.abs(n - j) == n) {
+                    System.out.print("* ");
+                } else {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
